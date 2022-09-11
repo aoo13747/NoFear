@@ -4,18 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PistolBullet
-  - SMGBullet
-  - PlayerBullet
   - HPbar
-  - Slimey
   - PotionS
   - PotionM
-  - ShotGunBullet
   - Shotgunammo
   - SMGammo
   - Grenadeammo
   - Heavyammo
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

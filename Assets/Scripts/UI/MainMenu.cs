@@ -9,8 +9,14 @@ public class MainMenu : MonoBehaviour
     public string sceneToLoad;
     public void StartGame()
     {
+        sceneToLoad = "StageSelect";
         sceneFader.FadeTo(sceneToLoad);
     }    
+    public void MainMenuScene()
+    {
+        sceneToLoad = "MainMenu";
+        sceneFader.FadeTo(sceneToLoad);
+    }
     public void ExitGame()
     {
         Application.Quit();

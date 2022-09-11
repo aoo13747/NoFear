@@ -19,8 +19,6 @@ public class EnemyAI : MonoBehaviour
 
     private Rigidbody2D rb;
 
-
-
     #region EnemyType
     #region Melee
     [Header("Melee")]
@@ -80,8 +78,8 @@ public class EnemyAI : MonoBehaviour
         Vector2 newPos;
         if(isMeleeType)
         {
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-            rb.rotation = angle;
+            /*float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+            rb.rotation = angle;*/
 
             if (distance > meleeDistance)
             {
@@ -147,9 +145,8 @@ public class EnemyAI : MonoBehaviour
     {
         if (Time.time >= nextTimeToFire)
         {
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);            
             Destroy(bullet, 5f);
-
             nextTimeToFire = Time.time + 1f / fireRate;
         }
     }

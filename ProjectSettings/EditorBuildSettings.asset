@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8e5db68fd2ee3524187c2c7d37c17e06
   - enabled: 1
-    path: Assets/Scenes/Prototype_WIP01.unity
-    guid: 5868ee352f3bb674cb8a0a77d0583414
+    path: Assets/Scenes/StageSelect.unity
+    guid: 36954ab46cec35a4f81e8bf53601629e
+  - enabled: 1
+    path: Assets/Scenes/GameplayNormal.unity
+    guid: b346769e7b8644e4e98e128a543c6354
+  - enabled: 1
+    path: Assets/Scenes/GameplayNight.unity
+    guid: 25a9ca4ac8b6649459af7d3228f9b397
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 27134428139cf324cac597c74008bc16
   m_configObjects: {}

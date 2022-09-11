@@ -11,11 +11,9 @@ public class Wave
 [System.Serializable]
 public class EnemyType
 {
-	public GameObject enemyPrefab;
-    public string NameTag;
-    
-	[Range(0f, 1f)]
-	public float spawnChance;
+	public GameObject enemyPrefab;    
+    [Range(0,6)]
+	public int spawnChance;
 }
 [System.Serializable]
 public class Levels

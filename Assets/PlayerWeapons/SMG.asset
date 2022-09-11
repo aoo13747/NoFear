@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: SubMachineGun
   fireRate: 5
-  maxAmmo: 90
+  maxAmmo: 270
   currentAmmo: 0
-  weaponBulletTag: SMGBullet
   bulletPrefab: {fileID: 8323478239673943122, guid: 7aed4b7e48f75ea4ca826371237c997b,
     type: 3}
+  fireSound: {fileID: 8300000, guid: 3d8313b4d87b42947a4122f83dc81dff, type: 3}
   shootRayCast: 0
   rayCastDamage: 0

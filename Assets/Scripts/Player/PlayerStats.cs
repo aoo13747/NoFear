@@ -5,38 +5,25 @@ using UnityEngine.UI;
 
 public class PlayerStats : Identity
 {
-    public HPBar hpBar;
+    public HPBar hpBar;    
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         hpBar.SetMaxHealth(maxHealth);
-    }    
-
-    // Update is called once per frame
-    void Update()
-    {
-        //TextHPbar////////////////////
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            currentHealth -= 10;
-            hpBar.SetHealth(currentHealth);
-            Debug.Log(currentHealth);
-        }
-        ///////////////////////////////
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-    public override void Die()
+    }   
+    public override void Die(PoolObjectType type)
     {
         GameManager.instance.PlayerDied();
-        base.Die();
+        base.Die(PoolObjectType.Player);
     }
     private void FixedUpdate()
     {
         hpBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Die(PoolObjectType.Player);
+        }
     }
 
 

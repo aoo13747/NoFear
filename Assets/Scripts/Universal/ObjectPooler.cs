@@ -6,18 +6,16 @@ using System.Collections.Generic;
 
 public class ObjectPoolItem 
 {
-  public GameObject objectToPool;
-  public int amountToPool;
-  public bool shouldExpand;
+    public GameObject objectToPool;
+    public int amountToPool;
+    public bool shouldExpand;
+    public string NameTag;
 }
-
 public class ObjectPooler : MonoBehaviour 
 {
-
     public static ObjectPooler SharedInstance;
     public List<ObjectPoolItem> itemsToPool;
-    public List<GameObject> pooledObjects;    
-
+    public List<GameObject> pooledObjects;
     void Awake() 
     {
 		SharedInstance = this;
@@ -27,6 +25,7 @@ public class ObjectPooler : MonoBehaviour
     void Start () 
     {
         pooledObjects = new List<GameObject>();
+              
         foreach (ObjectPoolItem item in itemsToPool) 
         {
             for (int i = 0; i < item.amountToPool; i++) 

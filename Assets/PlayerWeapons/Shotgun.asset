@@ -16,8 +16,8 @@ MonoBehaviour:
   fireRate: 1
   maxAmmo: 24
   currentAmmo: 0
-  weaponBulletTag: ShotGunBullet
-  bulletPrefab: {fileID: 7385282555905517168, guid: a2daab555bc57de499f30a31f9899a95,
+  bulletPrefab: {fileID: 2097699541814315673, guid: 28474a7cd4887474a8dbad4becc9ac7f,
     type: 3}
+  fireSound: {fileID: 8300000, guid: 950c85f0020a81f4ea94da1b68140d90, type: 3}
   shootRayCast: 0
   rayCastDamage: 0

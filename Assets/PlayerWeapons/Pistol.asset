@@ -19,5 +19,6 @@ MonoBehaviour:
   weaponBulletTag: PistolBullet
   bulletPrefab: {fileID: 2097699541814315673, guid: 28474a7cd4887474a8dbad4becc9ac7f,
     type: 3}
+  fireSound: {fileID: 8300000, guid: b41b249353127b940aa26d18850bd4db, type: 3}
   shootRayCast: 0
   rayCastDamage: 0

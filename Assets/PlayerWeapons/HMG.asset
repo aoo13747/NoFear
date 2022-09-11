@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: HeavyMachineGun
   fireRate: 3
-  maxAmmo: 45
-  currentAmmo: 0
-  weaponBulletTag: 
+  maxAmmo: 60
+  currentAmmo: 54
   bulletPrefab: {fileID: 0}
+  fireSound: {fileID: 8300000, guid: 4596b7914e6e45b40bd1f3e8f08a8295, type: 3}
   shootRayCast: 1
   rayCastDamage: 20
